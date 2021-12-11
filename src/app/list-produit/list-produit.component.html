@@ -1,0 +1,33 @@
+<a routerLink="add"  >add product</a>
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">description</th>
+        <th scope="col">dateAjout</th>
+        <th scope="col">quantite</th>
+        <th scope="col">prixAchat</th>
+        <th scope="col">prixVente</th>
+        <th scope="col">magasin</th>
+        <th scope="col">delete</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of list">
+        <td>{{item.numero}}</td>
+        <td>{{item.description}}</td>
+        <td>{{item.dateAjout}}</td>
+        <td>{{item.quantite}}</td>
+        <td>{{item.prixAchat}}</td>
+        <td>{{item.prixVente}}</td>
+        <td>{{item.magasin.titre}}</td>
+<td><button class="btn btn-danger" (click)="deleteproduct(item.numero)">Delete</button>
+</td>
+      </tr>
+    
+    </tbody>
+  </table>
+  
+  <router-outlet></router-outlet>

@@ -1,0 +1,33 @@
+<div>
+    <label for="description">
+        description :
+    </label>
+<input id="description" type="text" [(ngModel)]="produit.description">
+</div>
+<div>
+    <label for="dateAjout">
+        dateAjout :
+    </label>
+<input id="dateAjout" type="text" [(ngModel)]="produit.dateAjout">
+</div>
+<div>
+    <label for="quantite">
+        quantite :
+    </label>
+<input id="quantite" type="number" [(ngModel)]="produit.quantite">
+</div>
+<div>
+    <label for="prixAchat">
+        prixAchat :
+    </label>
+<input id="prixAchat" type="number" [(ngModel)]="produit.prixAchat">
+</div>
+<div>
+    <label for="prixVente">
+        prixVente :
+    </label>
+<input id="prixVente" type="number" [(ngModel)]="produit.prixVente">
+</div>
+<div>
+<button (click)="add()">save</button>
+</div>

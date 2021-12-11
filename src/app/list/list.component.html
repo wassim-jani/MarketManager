@@ -1,0 +1,9 @@
+<table border="1">
+    <tr *ngFor="let mg of list "  >
+        <td> {{mg.id }} </td>
+        <td> {{mg.lieu}} </td>
+        <td> {{mg.nom}} </td>
+        <td><button class="btn btn-primary" [routerLink]="['/',mg.id]">products</button></td>
+    
+    </tr>
+</table>
